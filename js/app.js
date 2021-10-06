@@ -56,74 +56,94 @@ var Calculadora = {
     }
   },
   eventCero:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="0"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "0"
       }
+    }
   },
   eventUno:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ) {
         Calculadora.resultado.innerHTML="1"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "1"
       }
+    }
   },
   eventDos:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="2"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "2"
       }
+    }
   },
   eventTres:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="3"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "3"
       }
+    }
   },
   eventCuatro:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="4"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "4"
       }
+    }
   },
   eventCinco:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="5"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "5"
       }
+    }
   },
   eventSeis:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="6"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "6"
       }
+    }
   },
   eventSiete:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="7"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "7"
       }
+    }
   },
   eventOcho:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="8"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "8"
       }
+    }
   },
   eventNueve:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
       if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0") ){
         Calculadora.resultado.innerHTML="9"
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "9"
       }
+    }
   },
   eventOn:function(){
       Calculadora.resultado.innerHTML="0"
