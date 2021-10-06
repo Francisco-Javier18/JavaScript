@@ -124,6 +124,9 @@ var Calculadora = {
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "9"
       }
+    },
+    eventOn:function(){
+      Calculadora.resultado.innerHTML="0"
     }
 }
 
