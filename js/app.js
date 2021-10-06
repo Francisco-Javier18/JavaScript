@@ -138,6 +138,17 @@ var Calculadora = {
         }
       }
     }
+  },
+  eventSign:function(){
+    if(Calculadora.resultado.innerHTML.indexOf("-") == -1){
+      if((Calculadora.resultado.innerHTML.length==1)&&(Calculadora.resultado.innerHTML[0]=="0")){
+          Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML
+      }else{
+        Calculadora.resultado.innerHTML="-" + Calculadora.resultado.innerHTML
+      }
+    }else{
+      Calculadora.resultado.innerHTML=(Calculadora.resultado.innerHTML * -1) //se puede tanto multiplicar el resultado por -1 o simplemente usar el operador unary
+    }
   }
 }
 
