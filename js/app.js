@@ -124,10 +124,21 @@ var Calculadora = {
       }else{
         Calculadora.resultado.innerHTML=Calculadora.resultado.innerHTML + "9"
       }
-    },
-    eventOn:function(){
+  },
+  eventOn:function(){
       Calculadora.resultado.innerHTML="0"
+  },
+  eventPunto:function(){
+    if(Calculadora.resultado.innerHTML.length < 8){
+      if(Calculadora.resultado.innerHTML.indexOf(".") == -1){
+        if(Calculadora.resultado.innerHTML == ""){
+          Calculadora.resultado.innerHTML = Calculadora.resultado.innerHTML + "0.";
+        }else{
+          Calculadora.resultado.innerHTML = Calculadora.resultado.innerHTML + ".";
+        }
+      }
     }
+  }
 }
 
 Calculadora.evento()
