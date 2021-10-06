@@ -169,6 +169,45 @@ var Calculadora = {
     }else{
       Calculadora.resultado.innerHTML=(Calculadora.resultado.innerHTML * -1) //se puede tanto multiplicar el resultado por -1 o simplemente usar el operador unary
     }
+  },
+  eventMas:function(){
+    Calculadora.operacion="+";
+    Calculadora.operacionA=Calculadora.resultado.innerHTML;
+    Calculadora.resultado.innerHTML=""
+  },
+  eventMenos:function(){
+    Calculadora.operacion="-";
+    Calculadora.operacionA=Calculadora.resultado.innerHTML;
+    Calculadora.resultado.innerHTML=""
+  },
+  eventPor:function(){
+    Calculadora.operacion="*";
+    Calculadora.operacionA=Calculadora.resultado.innerHTML;
+    Calculadora.resultado.innerHTML=""
+  },
+  eventDividido:function(){
+    Calculadora.operacion="/";
+    Calculadora.operacionA=Calculadora.resultado.innerHTML;
+    Calculadora.resultado.innerHTML=""
+  },
+  eventIgual:function(){
+    Calculadora.operacionB = Calculadora.resultado.innerHTML;
+    var resultadoFinal = 0;
+    switch (Calculadora.operacion) {
+      case "+":
+         resultadoFinal = Number(Calculadora.operacionA) + Number(Calculadora.operacionB)
+         break;
+      case "-":
+         resultadoFinal = Number(Calculadora.operacionA) - Number(Calculadora.operacionB)
+         break;
+      case "*":
+         resultadoFinal = Number(Calculadora.operacionA) * Number(Calculadora.operacionB)
+         break;
+     case "/":
+         resultadoFinal = Number(Calculadora.operacionA) / Number(Calculadora.operacionB)
+         break;
+    }
+    Calculadora.resultado.innerHTML = resultadoFinal.toString().substring(0, 8)
   }
 }
 
